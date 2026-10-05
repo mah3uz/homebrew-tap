@@ -25,8 +25,9 @@ The app isn't signed with an Apple Developer ID or notarised. macOS won't open a
 downloaded app like that until its quarantine flag is cleared, and the cask clears it
 for you, so there's nothing to type after installing.
 
-If you installed an early copy with `brew tap mah3uz/insensical …`, that tap is gone.
-Remove it and install from here:
+If you installed an early copy with `brew tap mah3uz/insensical …`, the cask is no
+longer published there and that copy stays at 0.1.0. Remove the old tap and install
+from here:
 
 ```sh
 brew untap mah3uz/insensical
