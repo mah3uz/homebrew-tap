@@ -1,6 +1,6 @@
 cask "insensical" do
-  version "0.1.0"
-  sha256 "abdf36a2f99902b19e06fb586f6a7688b6f338cae9264ef23e9c94379d511776"
+  version "0.2.0"
+  sha256 "2540aa6d821b5076d8f09a0993a12658f00c3136b56f0525cd9fee48bf9a831b"
 
   url "https://github.com/mah3uz/insensical-release/releases/download/v#{version}/insensical-#{version}-aarch64-apple-darwin.dmg"
   name "insensical"
@@ -12,6 +12,9 @@ cask "insensical" do
 
   app "insensical.app"
   binary "#{appdir}/insensical.app/Contents/MacOS/isc"
+  bash_completion "#{appdir}/insensical.app/Contents/Resources/completions/isc.bash", target: "isc"
+  zsh_completion "#{appdir}/insensical.app/Contents/Resources/completions/_isc"
+  fish_completion "#{appdir}/insensical.app/Contents/Resources/completions/isc.fish"
 
   # The application carries no Developer ID, and macOS refuses to open one that was
   # downloaded until the mark a download leaves on it is taken off.
