@@ -6,6 +6,11 @@ class Quarry < Formula
   license "MIT"
   head "https://github.com/mah3uz/quarry.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/mah3uz/homebrew-tap/releases/download/quarry-0.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "556fdc5033c29a99b0859b2e97688309d1df4b0db872120f2510825d87722359"
+  end
+
   depends_on "rust" => :build
 
   def install
