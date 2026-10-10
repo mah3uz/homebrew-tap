@@ -1,6 +1,6 @@
 cask "insensical" do
-  version "0.2.0"
-  sha256 "2540aa6d821b5076d8f09a0993a12658f00c3136b56f0525cd9fee48bf9a831b"
+  version "0.3.0"
+  sha256 "e5a0494338381318bf01284499b92dea936b6becb717f822047f7946c7a02b07"
 
   url "https://github.com/mah3uz/insensical-release/releases/download/v#{version}/insensical-#{version}-aarch64-apple-darwin.dmg"
   name "insensical"
